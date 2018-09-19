@@ -18,14 +18,16 @@ func Start() {
 		port = "3000"
 	}
 
-	http.ListenAndServe("localhost:" + port, router)
+	http.ListenAndServe("localhost:"+port, router)
 
 }
 
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Hello, Web from Go!")
 	fmt.Fprintln(w, "Hello, Web from Go!")
 }
 
 func goHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("I <3 Go!")
 	fmt.Fprintln(w, "I <3 Go!")
 }

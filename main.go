@@ -1,9 +1,9 @@
 package main
 
 import (
+	"advanced-computer-lab/server"
 	"github.com/joho/godotenv"
 	"log"
-	"advanced-computer-lab/server"
 )
 
 func main() {
